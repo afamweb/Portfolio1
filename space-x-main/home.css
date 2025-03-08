@@ -1,0 +1,248 @@
+@import url("https://fonts.googleapis.com/css2?family=Barlow+Condensed&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Barlow:wght@600&family=Bellefair&family=Fraunces:opsz,wght@9..144,700;9..144,900&family=Raleway&family=Roboto&display=swap");
+* {
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  background-image: url(./space-tourism-website-main/starter-code/assets/home/background-home-desktop.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  height: 100vh;
+}
+.nav-bar {
+  display: flex;
+  align-items: center;
+  position: relative;
+  justify-content: space-between;
+  padding: 1em clamp(0.5em, 6vw, 0.4em) 1em clamp(0.4em, 3vw, 10em);
+  height: 20vh;
+}
+.nav-bar input {
+  display: none;
+}
+.logo {
+  display: flex;
+  align-items: center;
+}
+nav {
+  display: flex;
+  align-items: center;
+  background-color: #bfc4e211;
+  backdrop-filter: blur(3em);
+  position: relative;
+  border-radius: 5px;
+  height: 50%;
+  padding: 0em clamp(1em, 10vw, 5em) 0em clamp(1em, 10vw, 5em);
+  font-family: "Barlow Condensed", sans-serif;
+}
+nav > .primary-navigation a > span {
+  font-weight: 600;
+  margin-inline-end: 0.7em;
+}
+.primary-navigation {
+  display: flex;
+  list-style: none;
+  height: 100%;
+}
+li:nth-child(1)::after {
+  content: "";
+  width: 100%;
+  height: 2px;
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  background-color: #fff;
+}
+li {
+  display: flex;
+  align-items: center;
+  position: relative;
+  height: 100%;
+}
+li a::after {
+  content: "";
+  width: 0%;
+  height: 2px;
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  background-color: #fff;
+}
+li a {
+  font-size: clamp(1em, 1.4vw, 2em);
+  font-weight: 300;
+  text-decoration: none;
+  color: #fff;
+}
+li a:hover::after {
+  width: 100%;
+  opacity: 0.6;
+}
+li:not(a:last-of-type) {
+  margin-right: min(2vw, 2em);
+}
+.mobile-nav-toggle {
+  display: none;
+  outline: none;
+}
+.bottom {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  color: white;
+  padding: 0em clamp(1em, 10vw, 5em) 0em clamp(1em, 10vw, 5em);
+  height: 60%;
+}
+.text {
+  align-self: center;
+}
+.text h5 {
+  font-family: "Barlow Condensed", sans-serif;
+  font-size: clamp(1em, 3vw, 3em);
+  font-weight: 400;
+  color: #d0d6f9;
+}
+
+.text h1 {
+  font-family: "Bellefair", serif;
+  font-size: clamp(1em, 10vw, 12em);
+  font-weight: 700;
+  margin: 17px 0;
+}
+.text p {
+  font-family: "Barlow Condensed";
+  font-size: clamp(1em, 1.5vw, 2em);
+  font-weight: 300;
+  line-height: 1.5em;
+}
+.right {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 100%;
+  background-color: white;
+  color: black;
+  padding: clamp(1em, 9vw, 5em);
+  font-family: "Bellefair";
+  font-weight: 500;
+  font-size: clamp(1em, 2vw, 2em);
+  height: clamp(2em, 2vw, 4em);
+  width: clamp(2em, 2vw, 4em);
+}
+/* .primary-navigation:has li[data-visible="true"] {
+  transform: translateX(0%);
+} */
+@media screen and (max-width: 600px) {
+  nav {
+    position: fixed;
+    align-self: flex-start;
+    inset:0 0 0 40%;
+    width: 100%;
+    height: 100vh;
+    backdrop-filter: blur(1em);
+    padding: 0;
+    transform: translateX(100%);
+    transition: 0.5s ease-in-out;
+  }
+  .primary-navigation {
+    flex-direction: column;
+    height: 60vh;
+    font-size: clamp(1em, 2vw, 2em);
+    transition: 1s ease-in-out;
+    padding-left: 2em;
+  }
+  .nav-bar:has(:checked) > nav {
+    transform: translateX(0%);
+  }
+  .nav-bar {
+    align-items: center;
+  }
+  .nav-bar input {
+    display: none;
+  }
+  
+  li {
+    height: 10%;
+    letter-spacing: 5px;
+  }
+  .nav-bar li:nth-child(1)::after {
+    width: 60%;
+  }
+  li a:hover::after {
+    display: none;
+  }
+
+  li a:hover {
+    transition: 0.3s ease-in-out;
+    color: rgba(145, 161, 233, 0.664);
+  }
+  .line {
+    display: none;
+  }
+  .mobile-nav-toggle {
+    display: flex;
+    align-items: center;
+    position: absolute;
+    background: url(./space-tourism-website-main/starter-code/assets/shared/icon-hamburger.svg);
+    background-repeat: no-repeat;
+    width: 2rem;
+    border: 0;
+    aspect-ratio: 1;
+    top: 3rem;
+    right: 2rem;
+    z-index: 9999;
+    outline: none;
+  }
+}
+
+@media screen and (max-width: 600px) {
+  body {
+    background-image: url(./space-tourism-website-main/starter-code/assets/home/background-home-tablet.jpg);
+  }
+  .nav-bar {
+    display: flex;
+    align-items: center;
+    position: relative;
+    justify-content: space-between;
+
+    height: 10vh;
+  }
+  li a {
+    font-size: clamp(.7em, 2vw, 2em);
+    font-weight: 300;
+    text-decoration: none;
+    color: #fff;
+  }
+
+  .bottom {
+    flex-direction: column;
+    text-align: center;
+    height: 70vh;
+    padding: 0em clamp(1em, 5vw, 5em)
+  }
+  .bottom h1 {
+    margin-block: 15px;
+    font-size: clamp(5em, 10vw, 12em);
+    font-weight: 700;
+  }
+  .bottom h5 {
+    font-size: clamp(1.5em, 2vw, 3em);
+    font-weight: 400;
+  }
+  .text {
+    margin-top: 20px;
+  }
+  .right {
+    height: clamp(3em, 50vw, 6em);
+    width: clamp(3em, 50vw, 6em);
+  }
+  .text p {
+    font-family: "Barlow Condensed";
+    font-size: clamp(1.2em, 3vw, 2em);
+    font-weight: 300;
+    line-height: 1.3em;
+  }
+}
+

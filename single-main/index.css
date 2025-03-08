@@ -1,0 +1,653 @@
+@import url("https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@700&display=swap");
+body {
+  margin: 0;
+  padding: 1.5em;
+  background: #fff7f0;
+}
+.nav {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding-top: 1em;
+}
+.nav-right button {
+  background-color: black;
+  color: white;
+  border-radius: 3em;
+  border: none;
+  font-family: Plus Jakarta Sans;
+  font-size: 1em;
+  padding: clamp(1em, 3em, 1.5em);
+}
+.nav-right button:hover {
+  background: #755cde;
+  cursor: pointer;
+}
+.main {
+  display: flex;
+  flex-direction: column;
+  font-family: Plus Jakarta Sans;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+}
+.main h2 {
+  font-size: 3em;
+  font-weight: bolder;
+  text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+}
+.main p {
+  font-size: 1rem;
+  font-style: normal;
+  font-weight: 100;
+  color: #7a746e;
+}
+.pattern {
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+}
+.top {
+  display: flex;
+  flex-direction: column;
+  gap: 1em;
+}
+.GD {
+  position: relative;
+  background-color: #755cde;
+  min-height: 50vh;
+  border-radius: 1em;
+}
+.GD svg {
+  position: absolute;
+  top: 3em;
+  right: 2rem;
+}
+.GD h3 {
+  position: absolute;
+  font-family: Plus Jakarta Sans;
+  font-size: 2rem;
+  font-weight: 700;
+  color: white;
+  bottom: 1rem;
+  margin: 0;
+  left: 2rem;
+}
+.section {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  min-height: 10rem;
+  gap: 1em;
+}
+.sub {
+  display: flex;
+  justify-content: center;
+  gap: 1em;
+  min-height: 10rem;
+}
+.ui {
+  position: relative;
+  background: #f6a560;
+  border-radius: 1em;
+  min-width: 50%;
+}
+.ui svg {
+  position: absolute;
+  top: 2em;
+  right: 2rem;
+}
+.ui h3 {
+  position: absolute;
+  font-family: Plus Jakarta Sans;
+  font-size: 1.5rem;
+  font-weight: 700;
+  color: white;
+  bottom: 1rem;
+  left: 2rem;
+  margin: 0;
+}
+
+.App {
+  position: relative;
+  background: #f39e9e;
+  border-radius: 1em;
+  min-width: 50%;
+}
+.App svg {
+  position: absolute;
+  top: 2em;
+  right: 2rem;
+}
+.App h3 {
+  position: absolute;
+  font-family: Plus Jakarta Sans;
+  font-size: 1.5rem;
+  font-weight: 700;
+  color: white;
+  bottom: 1rem;
+  margin: 0;
+  left: 2rem;
+}
+
+.ill {
+  position: relative;
+  background: #eb7565;
+  min-height: 30vh;
+  border-radius: 1em;
+}
+.ill svg {
+  position: absolute;
+  top: 3em;
+  right: 2rem;
+}
+.ill h3 {
+  position: absolute;
+  font-family: Plus Jakarta Sans;
+  font-size: 2rem;
+  font-weight: 700;
+  color: white;
+  bottom: 0.5em;
+  left: 2rem;
+}
+.last {
+  display: flex;
+  flex-direction: column;
+  gap: 1em;
+}
+.photo {
+  position: relative;
+  background: #61c4b7;
+  min-height: 30vh;
+  border-radius: 1em;
+}
+.photo svg {
+  position: absolute;
+  top: 3em;
+  right: 2rem;
+}
+.photo h3 {
+  position: absolute;
+  font-family: Plus Jakarta Sans;
+  font-size: 2rem;
+  font-weight: 700;
+  color: white;
+  bottom: 0.5em;
+  left: 2rem;
+}
+.MG {
+  position: relative;
+  background: #552049;
+  min-height: 30vh;
+  border-radius: 1em;
+}
+.MG svg {
+  position: absolute;
+  top: 3em;
+  right: 2rem;
+}
+.MG h3 {
+  position: absolute;
+  font-family: Plus Jakarta Sans;
+  font-size: 2rem;
+  font-weight: 700;
+  color: white;
+  bottom: 0.5em;
+  left: 2rem;
+}
+
+.about {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  text-align: center;
+  margin: 1rem 0;
+}
+.text h2 {
+  font-family: "Plus Jakarta Sans";
+  font-style: normal;
+  font-weight: 900;
+  font-size: 1.5em;
+  color: #030303;
+}
+.text p {
+  font-family: "Plus Jakarta Sans";
+  font-style: normal;
+  font-weight: 500;
+  color: #7a746e;
+  font-size: 1em;
+}
+img {
+  height: 20em;
+}
+.about button {
+  padding: 1em 2em;
+  font-family: "Plus Jakarta Sans";
+  background-color: #eb7565;
+  color: white;
+  border: none;
+  border-radius: 3em;
+}
+.about button:hover {
+  background: #f6a560;
+  cursor: pointer;
+}
+@media only screen and (min-width: 600px) {
+  .pattern {
+    width: 100%;
+  }
+  .top {
+    flex-direction: row;
+    width: 100%;
+  }
+  .GD {
+    position: relative;
+    background-color: #755cde;
+    min-height: 50vh;
+    border-radius: 1em;
+    width: 43%;
+  }
+  .GD svg {
+    position: absolute;
+    top: 2em;
+    right: 1rem;
+  }
+  .GD h3 {
+    position: absolute;
+    font-family: Plus Jakarta Sans;
+    font-size: 1.5rem;
+    font-weight: 700;
+    color: rgb(255, 255, 255);
+    bottom: 1rem;
+    margin: 0;
+    left: 1rem;
+  }
+  .section {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    width: 50%;
+    gap: 1em;
+  }
+  .sub {
+    display: flex;
+    gap: 1em;
+    min-height: 10rem;
+  }
+  .ui {
+    position: relative;
+    background: #f6a560;
+    border-radius: 1em;
+  }
+  .ui svg {
+    position: absolute;
+    top: 2em;
+    right: 1rem;
+  }
+  .ui h3 {
+    position: absolute;
+    font-family: Plus Jakarta Sans;
+    font-size: 1.5rem;
+    font-weight: 700;
+    color: white;
+    bottom: 1rem;
+    left: 1rem;
+    margin: 0;
+  }
+
+  .App {
+    position: relative;
+    background: #f39e9e;
+    border-radius: 1em;
+  }
+  .App svg {
+    position: absolute;
+    top: 2em;
+    right: 1rem;
+  }
+  .App h3 {
+    position: absolute;
+    font-family: Plus Jakarta Sans;
+    font-size: 1.5rem;
+    font-weight: 700;
+    color: white;
+    bottom: 1rem;
+    margin: 0;
+    left: 1rem;
+  }
+
+  .ill {
+    position: relative;
+    background: #eb7565;
+    min-height: 26vh;
+    border-radius: 1em;
+  }
+  .ill svg {
+    position: absolute;
+    top: 2em;
+    right: 1rem;
+  }
+  .ill h3 {
+    position: absolute;
+    font-family: Plus Jakarta Sans;
+    font-size: 1.5rem;
+    font-weight: 700;
+    color: white;
+    bottom: 1rem;
+    left: 1rem;
+    margin: 0;
+  }
+  .last {
+    display: flex;
+    flex-direction: row;
+    gap: 1em;
+    width: 100%;
+  }
+  .photo {
+    position: relative;
+    background: #61c4b7;
+    min-height: 30vh;
+    border-radius: 1em;
+    width: 50%;
+  }
+  .photo svg {
+    position: absolute;
+    top: 2em;
+    right: 1rem;
+  }
+  .photo h3 {
+    position: absolute;
+    font-family: Plus Jakarta Sans;
+    font-size: 1.5rem;
+    font-weight: 700;
+    color: white;
+    bottom: 2rem;
+    left: 1rem;
+    margin: 0;
+  }
+  .MG {
+    position: relative;
+    background: #552049;
+    min-height: 30vh;
+    border-radius: 1em;
+    width: 50%;
+  }
+  .MG svg {
+    position: absolute;
+    top: 2em;
+    right: 1rem;
+  }
+  .MG h3 {
+    position: absolute;
+    font-family: Plus Jakarta Sans;
+    font-size: 1.5rem;
+    font-weight: 700;
+    color: white;
+    bottom: 2rem;
+    left: 1rem;
+    margin: 0;
+  }
+  .about {
+    display: flex;
+    align-items: center;
+    flex-direction: row;
+    text-align: start;
+    margin: 1rem 0;
+    gap: 2em;
+  }
+  .text h2 {
+    font-size: 1.5em;
+  }
+  .text p {
+    font-size: 0.8em;
+  }
+}
+.work {
+  font-family: Plus Jakarta Sans;
+  font-size: 1.5rem;
+  font-weight: 700;
+  text-align: center;
+  margin-bottom: 1.5em;
+}
+.work img{
+  height: 10rem;
+  width: 10rem;
+}
+
+.work .img {
+  display: flex;
+  overflow: scroll;
+  gap: 1em;
+  
+}
+.work .img::-webkit-scrollbar{
+  width: 0;
+}
+
+.bottom {
+  background-color: #030303;
+  color: white;
+  text-align: center;
+  padding: 2em 0.8rem;
+  font-family: "Plus Jakarta Sans";
+  border-radius: 1rem;
+}
+.bottom p {
+  font-size: 0.8rem;
+  word-spacing: 0.1em;
+  font-weight: 100;
+}
+.bottom button {
+  border: none;
+  background-color: #eb7565;
+  padding: 1em 2em;
+  border-radius: 3em;
+  color: white;
+}
+.bottom button:hover {
+  background: #f6a560;
+  cursor: pointer;
+}
+.footer {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding-top: 1em;
+}
+@media only screen and (min-width: 900px) {
+  .pattern {
+    flex-direction: row;
+    width: 100%;
+    margin-bottom: 3em;
+  }
+  .top {
+    flex-direction: row;
+    width: 100%;
+  }
+  .GD {
+    position: relative;
+    background-color: #755cde;
+    min-height: 20vh;
+    border-radius: 1em;
+    width: 50%;
+  }
+  .GD svg {
+    position: absolute;
+    top: 2em;
+    right: 1rem;
+  }
+  .GD h3 {
+    position: absolute;
+    font-family: Plus Jakarta Sans;
+    font-size: 1.5rem;
+    font-weight: 700;
+    color: rgb(255, 255, 255);
+    bottom: 1rem;
+    margin: 0;
+    left: 1rem;
+  }
+  .section {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    width: 50%;
+    /* gap: 1em; */
+  }
+  .sub {
+    display: flex;
+    gap: 1em;
+    min-height: 14rem;
+  }
+  .ui {
+    position: relative;
+    background: #f6a560;
+    border-radius: 1em;
+  }
+  .ui svg {
+    position: absolute;
+    top: 2em;
+    right: 1rem;
+  }
+  .ui h3 {
+    position: absolute;
+    font-family: Plus Jakarta Sans;
+    font-size: 1.5rem;
+    font-weight: 700;
+    color: white;
+    bottom: 1rem;
+    left: 1rem;
+    margin: 0;
+  }
+
+  .App {
+    position: relative;
+    background: #f39e9e;
+    border-radius: 1em;
+  }
+  .App svg {
+    position: absolute;
+    top: 2em;
+    right: 1rem;
+  }
+  .App h3 {
+    position: absolute;
+    font-family: Plus Jakarta Sans;
+    font-size: 1.5rem;
+    font-weight: 700;
+    color: white;
+    bottom: 1rem;
+    margin: 0;
+    left: 1rem;
+  }
+
+  .ill {
+    position: relative;
+    background: #eb7565;
+    min-height: 25vh;
+    border-radius: 1em;
+  }
+  .ill svg {
+    position: absolute;
+    top: 2em;
+    right: 1rem;
+  }
+  .ill h3 {
+    position: absolute;
+    font-family: Plus Jakarta Sans;
+    font-size: 1.5rem;
+    font-weight: 700;
+    color: white;
+    bottom: 1rem;
+    left: 1rem;
+    margin: 0;
+  }
+  .last {
+    display: flex;
+    flex-direction: column;
+    width: 50%;
+  }
+  .photo {
+    position: relative;
+    background: #61c4b7;
+    min-height: 30vh;
+    border-radius: 1em;
+    width: 100%;
+  }
+  .photo svg {
+    position: absolute;
+    top: 2em;
+    right: 1rem;
+  }
+  .photo h3 {
+    position: absolute;
+    font-family: Plus Jakarta Sans;
+    font-size: 1.5rem;
+    font-weight: 700;
+    color: white;
+    bottom: 2rem;
+    left: 1rem;
+    margin: 0;
+  }
+  .MG {
+    position: relative;
+    background: #552049;
+    min-height: 30vh;
+    border-radius: 1em;
+    width: 100%;
+  }
+  .MG svg {
+    position: absolute;
+    top: 2em;
+    right: 1rem;
+  }
+  .MG h3 {
+    position: absolute;
+    font-family: Plus Jakarta Sans;
+    font-size: 1.5rem;
+    font-weight: 700;
+    color: white;
+    bottom: 2rem;
+    left: 1rem;
+    margin: 0;
+  }
+  .about {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: row;
+    text-align: start;
+    margin: 1rem 0;
+    gap: 5em;
+    width: 100%;
+  }
+
+  .text {
+    min-width: 50%;
+  }
+  .text h2 {
+    font-size: 3em;
+  }
+  .text p {
+    font-size: 1.2em;
+  }
+  .work img{
+    height: 15rem;
+    width: 40rem;
+  }
+  .bottom {
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    background-color: #030303;
+    color: white;
+    padding: 2em 0.8rem;
+    font-family: "Plus Jakarta Sans";
+    border-radius: 1rem;
+    text-align: start;
+  }
+  .bt {
+    width: 50%;
+  }
+
+}
