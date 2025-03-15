@@ -10,7 +10,6 @@
   justify-content: center;
   width: 100%;
   align-items: center;
-
   background-color: #091e3e;
   height: 8vh;
 }
@@ -246,6 +245,9 @@
   font-weight: 900;
 }
 
+.btn{
+  display:flex;
+}
 .btn-1 {
   font-size: large;
   font-weight: 700;
@@ -261,7 +263,6 @@
 .btn-1:hover {
   cursor: pointer;
   background-color: #216077b6;
-  ;
   color: white;
 }
 
@@ -287,7 +288,6 @@
 .HPW {
   display: flex;
   align-items: center;
-
   justify-content: center;
   position: relative;
   width: 100%;
@@ -299,9 +299,7 @@
 .rate {
   display: flex;
   align-items: center;
-
   text-align: center;
-
   height: 100%;
   width: 75%;
   justify-content: space-evenly;
@@ -346,7 +344,6 @@
 .project {
   display: flex;
   align-items: center;
-
   justify-content: space-evenly;
   background-color: #eef9ff;
   padding: 1.4rem;
@@ -375,6 +372,15 @@
 }
 
 .about {
+  display: flex;
+  align-items: center;
+
+  justify-content: center;
+  width: 100%;
+  height: 100;
+  margin-bottom: 2rem;
+
+}.about {
   display: flex;
   align-items: center;
 
@@ -830,3 +836,740 @@ form {
   background-color: red;
   padding: 2rem;
 }
+
+
+@media only screen and (max-width: 600px) {
+
+  .header-nav {
+    display: none;
+  }
+  
+  .bg {
+    position: absolute;
+    background-color: #171663;
+    height: 50vh;
+    width: 100%;
+  }
+  
+  .background {
+    background: url("../img/carousel-1.jpg");
+    background-size: cover;
+    background-repeat: no-repeat;
+    opacity: .5;
+    height: 50vh;
+    width: 100%;
+    
+  }
+  
+  .main-nav {
+    display: flex;
+    justify-content: center;
+    width: 100%;
+    align-items: center;
+    position: relative;
+    z-index: 999;
+    height: 8vh;
+  }
+  
+  .nav-con {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 95%;
+    height: 100%;
+  }
+  
+  .logo a {
+    display: flex;
+    align-items: center;
+    text-decoration: none;
+    font-size:  clamp(.8em, 3vw, 1.5em);
+    font-weight: 900;
+    color: rgb(255, 255, 255);
+  }
+  
+  .logo img {
+    margin-right: 6px;
+    height: clamp(1.5em, 4vw, 3.5em)  ;
+    width: clamp(1.5em, 4vw, 3.5em)  ;
+  }
+  
+  .links {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  
+  .links ul {
+    display: flex;
+    align-items: center;
+    list-style: none;
+  }
+  
+  .links li {
+    display: flex;
+    align-items: center;
+    position: relative;
+  }
+  
+  .links li a {
+    text-decoration: none;
+    color: rgb(255, 255, 255);
+    font-size:  clamp(.8em, 2vw, 1em);
+    transition: all 1s;
+  }
+  
+  
+  .links li:nth-child(1)::after {
+    content: "";
+    width: 100%;
+    height: 2px;
+    position: absolute;
+    left: 0;
+    color: #06a3da;
+    bottom: -13%;
+    background-color: #06a3da;
+  }
+  
+  .links li a::after {
+    content: "";
+    background-color: #06a3da;
+    width: 10;
+    height: 2px;
+    position: absolute;
+    left: 0;
+    bottom: -13%;
+    transition: all .5s;
+  }
+  
+  .links li a:hover {
+    color: #06a3da;
+  }
+  
+  .links li a:hover::after {
+    width: 100%;
+    opacity: 0.6;
+  
+  }
+  
+  .links li:not(a:last-of-type) {
+    margin-right: min(1vw, 2rem);
+  
+  }
+  
+  .links button {
+    display:none;
+  }
+
+  .line {
+    align-self: center;
+    position: absolute;
+    height: 2px;
+    width: 100%;
+    background-color: #bfd2eb9d;
+  }
+  
+   
+  .main-con {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    position: relative;
+    width: 100%;
+    height: 40vh;
+  }
+ 
+  .main-text {
+    color: #ffffff;
+    width: 55%;
+  }
+   
+  .main-text p {
+    margin-bottom: 15px;
+    font-size: clamp(1em, 2vw, 2em);
+    font-weight: 400;
+  }
+  
+  .main-text h1 {
+    margin-bottom: 15px;
+    font-size:  clamp(1.5em, 3vw, 3em);
+    line-height: 1.5em;
+    font-weight: 900;
+  }
+  .btn{
+    display:flex;
+  }
+  .btn-1 {
+    font-size: large;
+    font-weight: 700;
+    margin-left: 2vw;
+    padding: clamp(.8rem, 1.5vw, 1.5rem);
+    background-color: #216077;
+    border: #216077 2px solid;
+    border-radius: 4px;
+    color: white;
+    transition: all .5s;
+  }
+  
+  .btn-1:hover {
+    cursor: pointer;
+    background-color: #216077b6;
+    color: white;
+  }
+  
+  .btn-2 {
+    font-size: large;
+    font-weight: 700;
+    margin-left: 2vw;
+    padding: clamp(.8rem, 1.5vw, 1.5rem);
+    background-color: transparent;
+    color: #ffffff;
+    border: 2px white solid;
+    border-radius: 4px;
+    transition: all .5s;
+  }
+  
+  .btn-2:hover {
+    cursor: pointer;
+    background-color: rgba(255, 255, 255, 0.736);
+    border: none;
+    color: rgb(0, 0, 0);
+  } 
+  .HPW {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+    width: 100%;
+    height: 50vh;
+    margin: 15vh 0 10vh 0;
+  }
+  
+  .rate {
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    flex-direction: column;
+    text-align: center;
+    height: 100%;
+    width: 80%;
+    
+  }
+  
+  .happy,
+  .win {
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    text-align: center;
+    background-color: #06a3da;
+    color: rgb(255, 255, 255);
+    padding:clamp(1.5em, 2vw, 3em);
+    width: 100%;
+    height: 33.33%;
+  }
+
+  .happy button,
+  .win button {
+    background-color: white;
+    padding: clamp(1em, 2vw, 2em);
+    height: 80px;
+    width: 80px;
+    border: none;
+    border-radius: 15px;
+  }
+   
+  .happy p,
+  .win p {
+    font-size: clamp(1.5rem, 2vw, 3rem);
+    margin-bottom: 12px;
+  }
+  
+  .happy h1,
+  .win h1 {
+    font-size: clamp(2em, 4vw, 3em);
+  }
+   
+  .project {
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    background-color: #eef9ff;
+    padding: clamp(1.5em, 2vw, 3em);
+    width: 100%;
+    height: 33.33%;
+  }
+  
+  .project p {
+    font-size: clamp(1.5rem, 2vw, 3rem);
+    margin-bottom: 12px;
+    color: #7088ff;
+  }
+  
+  .project h1 {
+    font-size:clamp(2em, 4vw, 3em);
+    color: rgba(15, 0, 0, 0.849);
+  }
+ 
+  .project button {
+    background-color: #06a3da;
+     padding: clamp(1em, 2vw, 2em);
+    height: 80px;
+    width: 80px;
+    border: none;
+    border-radius: 15px;
+  } 
+  .about {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+
+  }
+ 
+  .about-con {
+    display: flex;
+    flex-direction:column;
+    align-items: center;
+    justify-content: space-between;
+    width: 95%;
+    height: 100%;
+  }
+  
+  .ab-text {
+    width: 100%;
+  margin-bottom: 2em;
+  }
+  
+  .ab-text h5,
+  .quote-text h5,
+  .test-cont h5,
+  .main-ch h5 {
+    color: #06a3da;
+    font-size:clamp(1em, 2.5vw, 3em);
+    margin-bottom: 1rem;
+  }
+
+  .ab-text h1 {
+    margin-bottom: 1.5rem;
+    font-family: "Nunito", sans-serif;
+    font-size: clamp(2em, 3vw, 3em);
+    font-weight: 900;
+    line-height: 1.3em;
+    color: #091E3E;
+  }
+   
+  .li {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: #06a3da;
+    width: 15rem;
+    height: .5rem;
+    border-radius: 4px;
+    margin-bottom: 1.5rem;
+  }
+  
+  .bt-2 {
+    height: 100%;
+    flex-basis: 4px;
+    background-color: white;
+  }
+  
+  .ab-text p {
+    font-family: "Rubik", sans-serif;
+    font-size: clamp(1.1em, 2vw, 2em);
+    font-weight: 500;
+    line-height: 1.5em;
+    color: #6B6A75;
+  }
+   
+  .zoom-in {
+    display: flex;
+    justify-content: space-between;
+    flex-direction: column;
+    margin-top: 1rem;
+  }
+  
+  .awd h5,
+  .sup h5 {
+    font-size:clamp(1.3em, 2vw, 2em);
+    font-weight: 700;
+    color: #091E3E;
+  }
+ 
+  .call {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 60%;
+    margin-bottom: 1.5em;
+  }
+   
+  .call img{
+    background-color: #06a3da;
+    padding: clamp(1em, 2vw, 2em);
+    border-radius: 5px;
+  }
+
+ 
+  .call h5 {
+    font-size: clamp(1.2em, 4vw, 2em);
+    margin-bottom: .6rem;
+    color: #091E3E;
+  }
+  
+  .call p {
+    font-size: clamp(1em, 2vw, 2em);
+    color: #06a3da;
+  }
+   
+  .ab-text button {
+    font-size: large;
+    font-weight: 500;
+    padding: clamp(1em, 2vw, 2em), clamp(1em, 2vw, 2em);
+    background-color: #216077;
+    border: none;
+    border-radius: 4px;
+    color: white;
+    transition: all .5s;
+  }
+  
+  .ab-text button:hover {
+    cursor: pointer;
+    background-color: #2160779c;
+    color: white;
+  }
+  
+  .ab-img {
+    height: 100%;
+    width: 100%;
+    margin-bottom: 5em;
+  }
+  
+  .ab-img img {
+    height: 100%;
+    width: 100%;
+    border-radius:2%;
+  }
+  
+  .cont-ch {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+  }
+  
+  .main-ch {
+    display: flex;
+    flex-direction: column;
+    width: 90%; 
+    margin-top: 6em;
+  }
+  .ch-text{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+    margin-bottom: 25em;
+    
+  } 
+   
+   .main-ch h1 {
+    font-family: "Nunito", sans-serif;
+    font-size: clamp(2em, 3vw, 3em);
+    font-weight: 900;
+    line-height: 1.2em;
+    color: #091E3E;
+    width: 100%; 
+    margin-bottom: 1.5rem;
+  }
+  
+ 
+  .ch {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+     height: 70vh;
+    width: 100%;
+  }
+  
+  .ch-1,
+  .ch-2,
+  .ch-3 {
+    width: 95%;
+    /* margin-top: 3rem; */
+  }
+  
+
+  .ch-2 img {
+    width: 100%;
+    height: 100%;
+    padding: 0 1.5rem 1.5rem 1.5rem;
+  }
+  
+  .bt {
+    display: flex;
+    align-items: flex-start;
+    flex-direction: column;
+    text-align: start;
+    width: 100%;
+    margin-top: 2rem;
+    padding: 0 1.5rem 1.5rem 1.5rem;
+  }
+  /* 
+  .bt h4 {
+    margin-bottom: .5rem;
+    font-family: "Nunito", sans-serif;
+    font-size: 1.5rem;
+    font-weight: 800;
+    line-height: 1.5rem;
+    color: #091E3E;
+  }
+  
+  .bt p {
+    font-family: "Rubik", sans-serif;
+    font-size: 1rem;
+    font-weight: 400;
+    line-height: 1.5rem;
+    color: #6B6A75;
+  }
+  
+  .bt img {
+    background-color: #06a3da;
+    padding: 1rem;
+    border-radius: 5px;
+    margin-bottom: 1rem;
+  }
+  
+  .quote-cont {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  
+    width: 100%;
+    height: 100vh;
+    margin-top: 2.5rem;
+  }
+  
+  .quote {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  
+    width: 90%;
+    height: 80vh;
+  }
+  
+  .quote-text {
+    height: 100%;
+    width: 56%;
+  }
+  
+  .quote-text h1 {
+    margin-bottom: 1.5rem;
+    font-family: "Nunito", sans-serif;
+    font-size: 2.4rem;
+    font-weight: 800;
+    line-height: 3rem;
+    color: #091E3E;
+  }
+  
+  .mid-sec {
+    display: flex;
+    align-items: center;
+  
+    justify-content: space-between;
+    margin-bottom: 1.5rem;
+  }
+  
+  .mid-sec h4 {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  
+    width: 40%; 
+    font-family: "Nunito", sans-serif;
+    font-weight: 600;
+    font-size: 1.25rem;
+    line-height: 1.2;
+    color: #091E3E;
+  }
+  
+  .mid-sec svg {
+    margin-right: 1rem;
+  }
+  
+  
+  .quote-text p {
+    font-family: "Rubik", sans-serif;
+    font-size: 1.2rem;
+  
+    font-weight: 400;
+    line-height: 1.5rem;
+    margin-bottom: 1.5rem;
+    color: #6B6A75;
+  }
+  
+  .call2 {
+    display: flex;
+    align-items: start;
+  
+    justify-content: space-between;
+    width: 48%;
+  }
+  
+  .call2 img {
+    background-color: #06a3da;
+    padding: 1rem;
+    border-radius: 5px;
+  }
+  
+  .call2 h5 {
+    font-size: 1.4rem;
+    margin-bottom: .5rem;
+    color: #091E3E;
+  }
+  
+  .call2 p {
+    font-size: 1.5rem;
+    color: #06a3da;
+  }
+  
+  .form-cont {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  
+    background-color: #06a3da;
+    width: 40%;
+    height: 100%;
+    border-radius: 10px;
+  }
+  
+  .form {
+    display: flex;
+    align-items: center;
+  
+    flex-direction: column;
+    justify-content: space-around;
+    padding: 2rem;
+  
+    width: 100%;
+    height: 100%;
+    position: relative;
+  }
+  
+  form {
+    width: 100%;
+  }
+  
+  .FC-main {
+    height: 100%;
+  
+  }
+  
+  .FC-main input,
+  .FC-main select,
+  .FC-main textarea {
+    font-family: "Rubik", sans-serif;
+    font-size: 1rem;
+    font-weight: 400;
+    color: #6B6A75;
+    padding-left: 15px;
+    width: 100%;
+    border-radius: 4px;
+    border: none;
+  }
+  
+  .FC-main button {
+    font-family: 'Nunito', sans-serif;
+    font-weight: 600;
+    padding: 1rem 1.5rem;
+    background-color: #091E3E;
+    border-radius: 4px;
+    color: white;
+    transition: all .5s;
+    width: 100%;
+  }
+  
+  .FC-main button:hover {
+    cursor: pointer;
+    background-color: #2160779c;
+    color: white;
+  }
+  
+  .FC-1 {
+    flex: auto;
+    margin-top: 12px;
+    width: 100%;
+  }
+  
+  .testimonial {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+    width: 100%;
+    margin-top: 6rem;
+  
+  }
+  
+  .test-cont {
+    display: flex;
+    align-items: center;
+  
+    flex-direction: column;
+    justify-content: center;
+    text-align: center;
+  
+    height: 100vh;
+    width: 90%
+  }
+  
+  .test-cont h1 {
+    margin-bottom: 1.5rem;
+    font-family: "Nunito", sans-serif;
+    font-size: 2.4rem;
+    font-weight: 800;
+    line-height: 3rem;
+    color: #091E3E;
+  }
+  
+  .testimonial .Profile-text {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    overflow: scroll;
+    width: 100%;
+    gap: 1rem;
+  
+  }
+  
+  .testimonial .Profile-text::-webkit-scrollbar {
+    width: 0;
+  }
+  
+  .PROFILE-NAME {
+  
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  
+  }
+  
+  .profile {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    text-align: start;
+    width: 50%;
+    height: 100%;
+    background-color: red;
+    padding: 2rem;
+  }
+} */
