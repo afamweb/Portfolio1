@@ -18,7 +18,6 @@
   display: flex;
   justify-content: space-between;
   align-items: center;
-
   width: 90%;
 }
 
@@ -62,7 +61,6 @@
   fill: black;
   background-color: rgb(255, 255, 255);
   border-radius: 50%;
-
 }
 
 .bg {
@@ -247,6 +245,7 @@
 
 .btn{
   display:flex;
+  justify-content: center;
 }
 .btn-1 {
   font-size: large;
@@ -1043,8 +1042,15 @@ form {
     justify-content: center;
     position: relative;
     width: 100%;
-    height: 50vh;
-    margin: 15vh 0 10vh 0;
+    height: 55vh;
+    margin: 10vh 0 10vh 0;
+  }
+  .HPW {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+    height: 55vh;
   }
   
   .rate {
@@ -1259,14 +1265,14 @@ form {
     display: flex;
     align-items: center;
     justify-content: center;
-    width: 100%;
+    width: 100%; 
   }
   
   .main-ch {
     display: flex;
     flex-direction: column;
     width: 90%; 
-    margin-top: 6em;
+   margin-top: 6em;
   }
   .ch-text{
     display: flex;
@@ -1293,7 +1299,7 @@ form {
     justify-content: center;
     flex-direction: column;
     align-items: center;
-     height: 70vh;
+    /* height: 70vh; */
     width: 100%;
   }
   
@@ -1320,7 +1326,7 @@ form {
     margin-top: 2rem;
     padding: 0 1.5rem 1.5rem 1.5rem;
   }
-  /* 
+ 
   .bt h4 {
     margin-bottom: .5rem;
     font-family: "Nunito", sans-serif;
@@ -1347,37 +1353,31 @@ form {
   
   .quote-cont {
     display: flex;
-    justify-content: center;
-    align-items: center;
-  
+    margin-top: 45rem;
     width: 100%;
-    height: 100vh;
-    margin-top: 2.5rem;
   }
-  
+ 
   .quote {
     display: flex;
-    justify-content: space-between;
-    align-items: center;
-  
-    width: 90%;
+    flex-direction: column;
+    width: 95%;
     height: 80vh;
   }
-  
+    
   .quote-text {
     height: 100%;
-    width: 56%;
+    width: 100%;
   }
-  
+ 
   .quote-text h1 {
     margin-bottom: 1.5rem;
     font-family: "Nunito", sans-serif;
     font-size: 2.4rem;
-    font-weight: 800;
-    line-height: 3rem;
+    font-weight: 700;
+    line-height: 2.5rem;
     color: #091E3E;
   }
-  
+/*    
   .mid-sec {
     display: flex;
     align-items: center;
@@ -1401,7 +1401,7 @@ form {
   
   .mid-sec svg {
     margin-right: 1rem;
-  }
+  } */
   
   
   .quote-text p {
@@ -1416,36 +1416,37 @@ form {
   
   .call2 {
     display: flex;
-    align-items: start;
-  
+    align-items: center;
     justify-content: space-between;
-    width: 48%;
+    width: 60%;
+    margin-bottom: 2em;
   }
-  
-  .call2 img {
+   
+  .call2 img{
     background-color: #06a3da;
-    padding: 1rem;
+    padding: clamp(1em, 2vw, 2em);
     border-radius: 5px;
   }
-  
+
+ 
   .call2 h5 {
-    font-size: 1.4rem;
-    margin-bottom: .5rem;
+    font-size: clamp(1.2em, 4vw, 2em);
+    margin-bottom: .6rem;
     color: #091E3E;
   }
   
   .call2 p {
-    font-size: 1.5rem;
+    font-size: clamp(1em, 2vw, 2em);
     color: #06a3da;
+    margin: 0;
   }
   
   .form-cont {
     display: flex;
     justify-content: center;
     align-items: center;
-  
     background-color: #06a3da;
-    width: 40%;
+    width: 100%;
     height: 100%;
     border-radius: 10px;
   }
@@ -1453,16 +1454,14 @@ form {
   .form {
     display: flex;
     align-items: center;
-  
     flex-direction: column;
     justify-content: space-around;
     padding: 2rem;
-  
     width: 100%;
     height: 100%;
     position: relative;
   }
-  
+   
   form {
     width: 100%;
   }
@@ -1509,33 +1508,26 @@ form {
   }
   
   .testimonial {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    height: 100vh;
+    display:flex;
+    margin-top: 28rem;
     width: 100%;
-    margin-top: 6rem;
-  
   }
   
   .test-cont {
     display: flex;
-    align-items: center;
-  
+    justify-content: start;
+    /* align-items: center; */
     flex-direction: column;
-    justify-content: center;
-    text-align: center;
-  
-    height: 100vh;
-    width: 90%
+    width: 100%
   }
   
   .test-cont h1 {
+    width: 100%;
     margin-bottom: 1.5rem;
     font-family: "Nunito", sans-serif;
     font-size: 2.4rem;
-    font-weight: 800;
-    line-height: 3rem;
+    font-weight: 700;
+    line-height: 2.2rem;
     color: #091E3E;
   }
   
@@ -1548,7 +1540,7 @@ form {
     gap: 1rem;
   
   }
-  
+  /*
   .testimonial .Profile-text::-webkit-scrollbar {
     width: 0;
   }
@@ -1571,5 +1563,5 @@ form {
     height: 100%;
     background-color: red;
     padding: 2rem;
-  }
-} */
+  }*/
+} 
