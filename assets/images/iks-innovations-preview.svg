@@ -1,0 +1,88 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 686 506" width="686" height="506">
+  <defs>
+    <linearGradient id="bgGrad" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0%" stop-color="#fcf9f8"/>
+      <stop offset="100%" stop-color="#eef5f4"/>
+    </linearGradient>
+    <linearGradient id="tealGrad" x1="0" y1="0" x2="1" y2="0">
+      <stop offset="0%" stop-color="#006a61"/>
+      <stop offset="100%" stop-color="#0fb5a6"/>
+    </linearGradient>
+    <filter id="cardShadow" x="-5%" y="-5%" width="110%" height="115%">
+      <feDropShadow dx="0" dy="8" stdDeviation="10" flood-color="#00302b" flood-opacity="0.1"/>
+    </filter>
+  </defs>
+  <rect width="686" height="506" fill="url(#bgGrad)"/>
+  <circle cx="600" cy="80" r="140" fill="#0fb5a6" opacity="0.12"/>
+  <rect x="0" y="0" width="686" height="52" fill="#ffffff" stroke="#e5e2e1" stroke-width="1"/>
+  <rect x="32" y="13" width="26" height="26" rx="6" fill="#006a61"/>
+  <text x="45" y="31" font-family="Arial, sans-serif" font-size="11" font-weight="bold" fill="#ffffff" text-anchor="middle">iKS</text>
+  <text x="66" y="27" font-family="Arial, sans-serif" font-size="13" font-weight="bold" fill="#1c1b1b">IKS Innovations</text>
+  <text x="66" y="39" font-family="Arial, sans-serif" font-size="8" fill="#6c7a77">RC: 8206530</text>
+  <rect x="235" y="17" width="46" height="18" rx="5" fill="#0fb5a6"/>
+  <text x="258" y="29" font-family="Arial, sans-serif" font-size="9" font-weight="bold" fill="#ffffff" text-anchor="middle">Home</text>
+  <text x="305" y="29" font-family="Arial, sans-serif" font-size="9" fill="#3c4947">Products</text>
+  <text x="360" y="29" font-family="Arial, sans-serif" font-size="9" fill="#3c4947">Solutions</text>
+  <text x="415" y="29" font-family="Arial, sans-serif" font-size="9" fill="#3c4947">Pricing</text>
+  <text x="460" y="29" font-family="Arial, sans-serif" font-size="9" fill="#3c4947">About</text>
+  <rect x="554" y="14" width="100" height="24" rx="6" fill="#0fb5a6"/>
+  <text x="604" y="29" font-family="Arial, sans-serif" font-size="9" font-weight="bold" fill="#ffffff" text-anchor="middle">Book a Free Demo</text>
+  <rect x="32" y="84" width="190" height="22" rx="11" fill="#0fb5a6" fill-opacity="0.15"/>
+  <text x="46" y="98" font-family="Arial, sans-serif" font-size="9" font-weight="bold" fill="#006a61">✓ Built for Nigerian Schools &amp; Colleges</text>
+  <text x="32" y="136" font-family="Arial, sans-serif" font-size="25" font-weight="bold" fill="#1c1b1b">All your school</text>
+  <text x="32" y="166" font-family="Arial, sans-serif" font-size="25" font-weight="bold" fill="#1c1b1b">operations. One</text>
+  <text x="32" y="196" font-family="Arial, sans-serif" font-size="25" font-weight="bold" fill="#006a61">smart system.</text>
+  <text x="32" y="224" font-family="Arial, sans-serif" font-size="10.5" fill="#3c4947">Management, offline CBT exams, clinical OSCE</text>
+  <text x="32" y="240" font-family="Arial, sans-serif" font-size="10.5" fill="#3c4947">scoring, and campus portals built for Nigeria.</text>
+  <rect x="32" y="262" width="114" height="32" rx="7" fill="url(#tealGrad)"/>
+  <text x="89" y="282" font-family="Arial, sans-serif" font-size="10" font-weight="bold" fill="#ffffff" text-anchor="middle">Book a Free Demo →</text>
+  <rect x="156" y="262" width="110" height="32" rx="7" fill="#ffffff" stroke="#bbcac6" stroke-width="1"/>
+  <text x="211" y="282" font-family="Arial, sans-serif" font-size="10" font-weight="bold" fill="#1c1b1b" text-anchor="middle">Chat on WhatsApp</text>
+  <rect x="316" y="76" width="338" height="236" rx="14" fill="#ffffff" filter="url(#cardShadow)" stroke="#e5e2e1" stroke-width="1"/>
+  <rect x="332" y="92" width="26" height="26" rx="6" fill="#0fb5a6" fill-opacity="0.15"/>
+  <text x="366" y="103" font-family="Arial, sans-serif" font-size="11" font-weight="bold" fill="#1c1b1b">Termly Operations Overview</text>
+  <text x="366" y="115" font-family="Arial, sans-serif" font-size="8.5" fill="#6c7a77">Second Term • Real-time Sync</text>
+  <rect x="590" y="94" width="48" height="18" rx="9" fill="#0fb5a6" fill-opacity="0.15"/>
+  <circle cx="601" cy="103" r="3" fill="#0fb5a6"/>
+  <text x="621" y="106" font-family="Arial, sans-serif" font-size="8.5" font-weight="bold" fill="#006a61" text-anchor="middle">Online</text>
+  <rect x="332" y="128" width="146" height="68" rx="9" fill="#f6f3f2"/>
+  <text x="342" y="143" font-family="Arial, sans-serif" font-size="8.5" fill="#3c4947">Active Students</text>
+  <text x="342" y="170" font-family="Arial, sans-serif" font-size="20" font-weight="bold" fill="#1c1b1b">1,420</text>
+  <text x="342" y="185" font-family="Arial, sans-serif" font-size="8" font-weight="bold" fill="#006a61">+4.8% vs last term</text>
+  <rect x="492" y="128" width="146" height="68" rx="9" fill="#f6f3f2"/>
+  <text x="502" y="143" font-family="Arial, sans-serif" font-size="8.5" fill="#3c4947">Attendance Trend</text>
+  <text x="592" y="143" font-family="Arial, sans-serif" font-size="8" font-weight="bold" fill="#006a61">96.4%</text>
+  <path d="M502 178 L522 172 L542 175 L562 162 L582 166 L604 154 L626 148" fill="none" stroke="#006a61" stroke-width="2.5" stroke-linecap="round"/>
+  <rect x="332" y="206" width="306" height="92" rx="9" fill="#f6f3f2"/>
+  <text x="342" y="222" font-family="Arial, sans-serif" font-size="9.5" font-weight="bold" fill="#1c1b1b">Termly Fee Collection (₦42.5M Target — 89.2%)</text>
+  <rect x="352" y="244" width="18" height="38" rx="3" fill="#0fb5a6"/>
+  <rect x="398" y="236" width="18" height="46" rx="3" fill="#0fb5a6"/>
+  <rect x="444" y="232" width="18" height="50" rx="3" fill="#0fb5a6"/>
+  <rect x="490" y="240" width="18" height="42" rx="3" fill="#0fb5a6"/>
+  <rect x="536" y="230" width="18" height="52" rx="3" fill="#0fb5a6"/>
+  <rect x="582" y="228" width="18" height="54" rx="3" fill="#006a61"/>
+  <rect x="32" y="344" width="146" height="126" rx="12" fill="#ffffff" filter="url(#cardShadow)" stroke="#e5e2e1" stroke-width="1"/>
+  <rect x="46" y="358" width="26" height="26" rx="6" fill="#0fb5a6" fill-opacity="0.15"/>
+  <text x="46" y="404" font-family="Arial, sans-serif" font-size="11.5" font-weight="bold" fill="#1c1b1b">Scholyn Nexus</text>
+  <text x="46" y="421" font-family="Arial, sans-serif" font-size="8.5" fill="#3c4947">Complete School OS,</text>
+  <text x="46" y="434" font-family="Arial, sans-serif" font-size="8.5" fill="#3c4947">Results &amp; Fee Audit</text>
+  <text x="46" y="454" font-family="Arial, sans-serif" font-size="8.5" font-weight="bold" fill="#006a61">Explore Suite →</text>
+  <rect x="190" y="344" width="146" height="126" rx="12" fill="#ffffff" filter="url(#cardShadow)" stroke="#e5e2e1" stroke-width="1"/>
+  <rect x="204" y="358" width="26" height="26" rx="6" fill="#0fb5a6" fill-opacity="0.15"/>
+  <text x="204" y="404" font-family="Arial, sans-serif" font-size="11.5" font-weight="bold" fill="#1c1b1b">EasyCBT Edition</text>
+  <text x="204" y="421" font-family="Arial, sans-serif" font-size="8.5" fill="#3c4947">100% Offline 3-Mode</text>
+  <text x="204" y="434" font-family="Arial, sans-serif" font-size="8.5" fill="#3c4947">WAEC &amp; UTME CBT</text>
+  <text x="204" y="454" font-family="Arial, sans-serif" font-size="8.5" font-weight="bold" fill="#006a61">Try Simulator →</text>
+  <rect x="348" y="344" width="146" height="126" rx="12" fill="#ffffff" filter="url(#cardShadow)" stroke="#e5e2e1" stroke-width="1"/>
+  <rect x="362" y="358" width="26" height="26" rx="6" fill="#0fb5a6" fill-opacity="0.15"/>
+  <text x="362" y="404" font-family="Arial, sans-serif" font-size="11.5" font-weight="bold" fill="#1c1b1b">CAOSCE Clinical</text>
+  <text x="362" y="421" font-family="Arial, sans-serif" font-size="8.5" fill="#3c4947">Digital OSCE Station</text>
+  <text x="362" y="434" font-family="Arial, sans-serif" font-size="8.5" fill="#3c4947">Scoring for Nursing</text>
+  <text x="362" y="454" font-family="Arial, sans-serif" font-size="8.5" font-weight="bold" fill="#006a61">Explore Suite →</text>
+  <rect x="506" y="344" width="148" height="126" rx="12" fill="#ffffff" filter="url(#cardShadow)" stroke="#e5e2e1" stroke-width="1"/>
+  <rect x="520" y="358" width="26" height="26" rx="6" fill="#0fb5a6" fill-opacity="0.15"/>
+  <text x="520" y="404" font-family="Arial, sans-serif" font-size="11.5" font-weight="bold" fill="#1c1b1b">CollegeHub Portal</text>
+  <text x="520" y="421" font-family="Arial, sans-serif" font-size="8.5" fill="#3c4947">Dual-Portal Higher Ed</text>
+  <text x="520" y="434" font-family="Arial, sans-serif" font-size="8.5" fill="#3c4947">SIS &amp; Split Bursary</text>
+  <text x="520" y="454" font-family="Arial, sans-serif" font-size="8.5" font-weight="bold" fill="#006a61">Explore Portal →</text>
+</svg>
